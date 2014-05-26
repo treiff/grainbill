@@ -83,6 +83,6 @@ Rails.application.configure do
 
   # Required for Heroku
   # Note --> Set this to actuall host name.
-  config.action_mailer.default_url_options = { host: 'localhost:3000' }
+  config.action_mailer.default_url_options = { host: 'http://grainbill.herokuapp.com/' }
 
 end
