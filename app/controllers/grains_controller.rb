@@ -1,5 +1,10 @@
 class GrainsController < ApplicationController
-	def list
-		@stuff = "<p>testme</p> #{Grain.id}"
+	def new
 	end
+	def list
+    @grain = Grain.find(:all)
+  end
+	def show
+   	@grain = Grain.find(params[:id])
+  end
 end

@@ -1,3 +1,12 @@
 <h1>Grain List</h1>
 
-<%=raw @stuff.brand %> 
+<% if @grain.blank? %>
+	<p>There is currently any grain in the system.</p>
+<% else %>
+	<p>These are the current grain in our system</p>
+<ul id="grain">
+	<% @grain.each do |g| %>
+		<li><%= link_to g.name, {:action => 'show', :id => g.id} %></li>
+<% end %>
+</ul>
+<% end %>
