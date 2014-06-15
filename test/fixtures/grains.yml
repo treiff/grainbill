@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  grain_id: 
+  brand: 
+  type: 
+  name: 
+  ppg: 1
+
+two:
+  grain_id: 
+  brand: 
+  type: 
+  name: 
+  ppg: 1
