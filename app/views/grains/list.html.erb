@@ -2,11 +2,22 @@
 
 <% if @grain.blank? %>
 	<p>There is currently any grain in the system.</p>
-<% else %>
-	<p>These are the current grain in our system</p>
-<ul id="grain">
-	<% @grain.each do |g| %>
-		<li><%= link_to g.name, {:action => 'show', :id => g.id} %></li>
-<% end %>
-</ul>
+	<% else %>
+		<p>These are the current grain in our system</p>
+		<table class="table table-striped">
+		<thead>
+			<tr>
+				<th>Brand</th>
+				<th>Name</th>
+				<th>PPG</th>
+			</tr>
+		</thead>
+		<% @grain.each do |grain| %>
+			<tr>
+				<td><%= grain.brand %></td>
+				<td><%= grain.name %></td>
+				<td><%= grain.ppg %></td>
+			</tr>
+		<% end %>
+		</table>
 <% end %>
