@@ -4,7 +4,7 @@ class GrainsController < ApplicationController
 	def list
     @grain = Grain.all
   end
-	# def show
+	def show
  #   	@grain = Grain.find(params[:id])
  #  end
 end
