@@ -19,7 +19,6 @@ ActiveRecord::Schema.define(version: 20140615150740) do
   create_table "grains", force: true do |t|
     t.integer  "grain_id"
     t.string   "brand"
-    t.string   "type"
     t.string   "name"
     t.integer  "ppg"
     t.datetime "created_at"

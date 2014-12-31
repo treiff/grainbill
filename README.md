@@ -5,4 +5,4 @@ This is the grainbill app, practice after working through.
 
 Readme will be updated as project progresses.
 
-by [Trevor Reiff] (http://treiff.blogspot.com)
+by [Trevor Reiff] (http://treiff.me)
